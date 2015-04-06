@@ -137,8 +137,8 @@ describe("About Applying What We Have Learnt", function() {
 
     var largestPalindrome = 0;
 
-    for (var i = 100; i <= 999; i++) {
-      for (var j = 100; j <= i; j++) {
+    for (var i = 999; i >= 100; i--) {
+      for (var j = i; j >= 100; j--) {
         var testNumber = i * j;
         if (testNumber > largestPalindrome && isPalindrome(testNumber)) {
           largestPalindrome = testNumber;
